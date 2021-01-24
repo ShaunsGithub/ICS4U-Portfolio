@@ -56,7 +56,26 @@
 									We created a new splash class to create a visual splash effect, and added a splash member to the drop class. When the drop hits the surface the splash is initialized with the x, y and z coordinates of the drop. 
 									The Splash mark is composed of diagonal lines with stroke weights and lengths depending on the z coordinate. Therefore, splashes further away will be smaller than rain splashes in the front.
 									</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<p>To add a depth perception effect into purple rain, rain falls slower and with less acceleration in the back. This creates an illusion of depth in a 2D scene.
+
+									More distant drops fall more slowly
+									
+									The initial speed of the drop is mapped to the z coordinate. Closer drops fall faster.
+									
+									More distant drops accelerate less
+									
+									The acceleration of the drop is mapped to the z coordinate dependant on how close it is to the screen. The closer the drop is, the faster it accelerates towards the ground. Acceleration is getting added each time this.fall function is called. 
+									</p>
+									<p>Clouds have different heights so raindrops will have a different starting positions. Rain falls when it has accumulated enough which is another factor of variation. Therefore, rainfall will now grow progressively to the climax of the storm.
+
+										Different heights
+										
+										When a drop is initialized or it hits the bottom the y coordinate is set to a random height between -50 and -500.
+										
+										Increasing Volume
+										
+										A drop is added once every ten frames until there are fifty drops. After that a drop is added every frame. After 500 drops the simulation resets.
+										</p>
 							</section>
 
 					</div>
