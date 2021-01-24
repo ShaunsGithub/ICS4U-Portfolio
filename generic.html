@@ -48,8 +48,9 @@
 										</p>
 								</header>
 								<div class="image main"><center><iframe src="https://drive.google.com/file/d/1rGqjSVxfJQAoFAvDvRqnfYvZL4K_Qrk-/preview" width="800" height="600"></iframe></center></div>
-								<h2>Our Creative Refactorings</h2>
-								<p>Added a surface
+								<center><h2>Our Creative Refactorings</h2></center>
+								<h3>More Realistic</h3>
+								<p>1.Added a surface
 
 									There is a point where the raindrop strikes the surface. The surface height varies with position on the z axis.
 									
@@ -57,6 +58,7 @@
 									We created a new splash class to create a visual splash effect, and added a splash member to the drop class. When the drop hits the surface the splash is initialized with the x, y and z coordinates of the drop. 
 									The Splash mark is composed of diagonal lines with stroke weights and lengths depending on the z coordinate. Therefore, splashes further away will be smaller than rain splashes in the front.
 									</p>
+								<h3>Depth Perception</h3>
 								<p>To add a depth perception effect into purple rain, rain falls slower and with less acceleration in the back. This creates an illusion of depth in a 2D scene.
 
 									More distant drops fall more slowly
@@ -67,6 +69,7 @@
 									
 									The acceleration of the drop is mapped to the z coordinate dependant on how close it is to the screen. The closer the drop is, the faster it accelerates towards the ground. Acceleration is getting added each time this.fall function is called. 
 									</p>
+								<h3>Rainfall Pattern</h3>
 									<p>Clouds have different heights so raindrops will have a different starting positions. Rain falls when it has accumulated enough which is another factor of variation. Therefore, rainfall will now grow progressively to the climax of the storm.
 
 										Different heights
